@@ -29,6 +29,12 @@ public class Professeur extends NomPrenom
         this.id = Professeur.NUMERO;
         Professeur.NUMERO++;
     }
+    
+    //Méthode qui permet de réinitialiser l'affectation de l'id
+    public static void resetId()
+    {
+        Professeur.NUMERO = 1;
+    }
 
     //Méthode qui permet au professeur de rechercher un élève dans la promotion en fonction de son id
     public Eleve rechercher(Promotion promotion, int id)
